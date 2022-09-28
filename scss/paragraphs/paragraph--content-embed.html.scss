@@ -1,0 +1,36 @@
+.paragraph--type--content-embed {
+  @extend .my-4;
+  .field--name-field-content-embed.field__items {
+    @extend .row;
+    &>.field__item {
+      @extend .mb-3;
+    }
+  }
+  &.paragraph-columns-4 {
+    .field--name-field-content-embed.field__items {
+      &>.field__item {
+        @extend .col-sm-6;
+        @extend .col-md-4;
+        @extend .col-lg-3;
+      }
+    }
+  }
+  &.paragraph-columns-3 {
+    .field--name-field-content-embed.field__items {
+      &>.field__item {
+        @extend .col-sm-6;
+        @extend .col-md-4;
+      }
+    }
+  }
+  &.paragraph-columns-2 {
+    .field--name-field-content-embed.field__items {
+      @extend .justify-content-center;
+      &>.field__item {
+        @extend .col-sm-6;
+        @extend .col-md-5;
+        @extend .col-md-4;
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.paragraph--type--constitution-documents {
+  @extend .col-md-10;
+  margin-left: auto;
+  margin-right: auto;   
+  .field--name-field-title {
+    text-transform: uppercase;
+    font-size: $font-size-lg !important;
+    padding-top: $spacer;
+    padding-bottom: $spacer;
+  }
+
+  .node--type-constitution,
+  .node--type-document {
+    border-top: solid 1px $white;
+    padding-top: $spacer;
+    padding-bottom: $spacer;
+    .field--name-field-image {
+      margin-left: $spacer;
+      margin-right: $spacer;
+    }
+    .field--name-field-author {
+      margin-bottom: 0;
+      display: flex;
+      &:before {
+        content: '|';
+        margin: 0 $spacer;
+        display: inline-block;
+      }
+      a{
+        color: $black;
+      }
+    }
+    .field--name-node-title h4{
+      font-size: $font-size-lg;
+      font-weight: bold;
+    }
+    .field--name-node-title h5{
+      font-weight: bold;
+      text-transform: uppercase;
+      a {
+        color: $dark-blue-2;
+      }
+    }
+  }
+  &.paragraph--view-mode--list {
+    .field--name-field-documents {
+      border-top: solid 1px $white;
+      .field__item {
+        @extend .h5;
+        @extend .p-3;
+        @include svg-inline(link, before, $body-color, $body-color, 2rem, 1rem);
+        &:before{
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+  &.paragraph--view-mode--left {
+    margin-left: 0;
+    margin-right: 0;
+    background: $background;
+    padding: $spacer $spacer*3 $spacer $spacer;
+    position: relative;
+    width: 100%;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: $spacer;
+      bottom: $spacer;
+      width: 30px;
+      height: 40px;
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMzEiIHZpZXdCb3g9IjAgMCAyNCAzMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDBWMjQuMk0xMiAyNC4yTDEgMTIuMU0xMiAyNC4yTDIzIDEyLjEiIHN0cm9rZT0iIzcyQjFEMyIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxsaW5lIHgxPSIxIiB5MT0iMjkuODAwMyIgeDI9IjIzIiB5Mj0iMjkuODAwMyIgc3Ryb2tlPSIjNzJCMUQzIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+Cg==);
+      background-repeat: no-repeat;
+      background-size: 30px 30px;
+      background-position: center center;
+      transition: all 0.3s ease;
+    }
+    .node--type-constitution,
+    .node--type-document {
+      border-top: none;
+      padding: 0;
+      color: $dark-blue-2;
+      h4{
+        text-transform: uppercase;
+      }
+
+    }
+    .field--name-field-image {
+      margin: 0;
+      img {
+        @extend .img-fluid;
+      }
+    }
+    h4 {
+      a {
+        color: $white;
+        &:hover {
+
+        }
+      }
+    }
+    .field--type-entity-reference {
+      margin-bottom: 0;
+      &.field__item {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

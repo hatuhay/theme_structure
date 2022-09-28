@@ -1,0 +1,10 @@
+.field{
+  &--name-field-page-element{
+    .contextual-region.paragraph--type--text{
+      
+    }
+  }
+}
+.field--label-inline .field__label, .field--label-inline .field__items {
+  display: inline-block;
+}

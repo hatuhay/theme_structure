@@ -1,0 +1,39 @@
+body.node--type-page {
+
+  .field--type-text-with-summary{
+    
+    .container{
+      > *{
+        @extend .col-md-8;
+      }
+    } 
+  }
+  .field--name-title{
+    &.field--label-hidden{
+      display: none;
+    }
+  }
+  .field--name-body {
+    &.full-width {
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+      background-color: $background;
+    }
+  }
+  .main-content .field--name-body{
+    @extend .py-4;
+  }
+  .field--name-field-title{
+    font-family: $font-family-sans-serif-2;
+    font-weight: $font-weight-bold;
+    @extend .h2;
+  }
+  .full-width-paragraph .field--name-field-title{
+    font-size: 35px;
+    padding: 1.5rem 0;
+    text-transform: uppercase;
+    margin: 0;
+    color: $dark-blue-2;
+  }
+
+}

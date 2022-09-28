@@ -1,0 +1,6 @@
+.paragraph--type--text {
+  &>section {
+    width: 100%;
+    @extend .px-3, .pb-3;
+  }
+}

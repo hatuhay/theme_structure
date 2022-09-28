@@ -1,0 +1,12 @@
+#block-peacemaker-breadcrumbs {
+  position: absolute;
+  top: 5rem;
+  a {
+    color: $white;
+  }
+}
+body.scrolled {
+  #block-peacemaker-breadcrumbs {
+    @extend .d-none;
+  }
+}

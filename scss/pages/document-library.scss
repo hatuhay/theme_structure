@@ -1,0 +1,105 @@
+body.document-library {
+  .search-wrapper {
+    .search-search {
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+      @extend .mb-3;
+      .container{
+        @extend .col-md-10;
+        @extend .px-md-5;
+
+      }  
+      .select__control {
+        border: none;
+        border-radius: 0;
+        @extend .shadow-sm;
+        @extend .bg-light;
+      }  
+      .input-wrapper {
+        margin: $spacer -1rem;
+        position: relative;
+        @include svg-inline(search, before, $body-color, $body-color, $font-size-base, 0.5rem);
+        &:before {
+          position: absolute;
+          left: 0.5rem;
+          top: 12px;
+        }
+        input {
+          flex-grow: 10;
+          padding-left: $spacer*2;
+          padding-right: $spacer;
+          border: none;
+        }
+        span {
+          padding-left: $spacer;
+          padding-right: $spacer;
+          border-radius: 0;
+        }
+      }
+      .query-container {
+        margin: $spacer -1rem;
+        @include media-breakpoint-down(md) {
+          display: grid;
+          gap: $spacer;
+        }
+        .query-wrapper {
+          flex-grow: 10;
+          padding: 0;
+          > .row{
+            @include media-breakpoint-down(lg) {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              row-gap: $spacer;
+            }
+            @include media-breakpoint-down(md) {
+              grid-template-columns: 1fr;
+            }
+          }
+        }
+        .search-clear {
+          background: $gray-button-clear;
+          border-radius: 0;
+          margin-left: $spacer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          @include media-breakpoint-down(md) {
+            margin-left: 0;   
+          }
+          &:hover {
+            background: $gray-500;
+          }
+        }
+      }
+    }
+    .total-results {
+      padding-top: 7px;
+      font-weight: $font-weight-bold;
+    }
+    .search-item {
+      @extend .p-4;
+      &.even {
+        background: $document-bg-even;
+      }
+      &.odd {
+        background: $document-bg-odd;
+      }
+    }
+  }
+  .select__control {
+    .select__indicator {
+      svg {
+        transform: rotate(-90deg);
+        transition: all 0.3s ease;          
+      }
+    }
+    &.select__control--menu-is-open {
+      .select__indicator {
+        svg {
+          transform: rotate(0deg);
+        }
+      }
+    }
+  }
+}
+

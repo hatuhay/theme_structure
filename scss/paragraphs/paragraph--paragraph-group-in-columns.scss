@@ -1,0 +1,52 @@
+.paragraph--type--paragraph-group-in-columns {
+  @extend .my-4;
+  .field__items {
+    @extend .row;
+    &>.field__item {
+      @extend .mb-3;
+    }
+  }
+  .field--name-field-title{
+    font-size: $font-size-lg !important;
+  }
+  &.paragraph-columns-4 {
+    .field--name-field-contenido {
+      &.field__items {
+        &>.field__item {
+          @extend .col-sm-6;
+          @extend .col-lg-4;
+          @extend .col-xl-3;
+        }
+      }
+    }
+  }
+  &.paragraph-columns-3 {
+    .field--name-field-contenido {
+      &.field__items {
+        &>.field__item {
+          @extend .col-sm-6;
+          @extend .col-lg-4;
+        }
+      }
+    }
+  }
+  &.paragraph-columns-2 {
+    .field--name-field-contenido {
+      &.field__items {
+        //@extend .justify-content-center;
+        &>.field__item {
+          @extend .col-md-6;
+          .paragraph--type--text{
+            section{
+              @extend .w-100;
+              @extend .p-4;
+              &:not([style*="#0f2b45"]){
+                color: $black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

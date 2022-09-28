@@ -1,0 +1,45 @@
+body.node--type-constitution {
+  h5 {
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    @extend .py-3;
+  }
+  .field--name-field-image {
+    width: 100%;
+    img {
+      width: inherit;
+      height: auto;
+    }
+  }
+  .field--name-field-author {
+    display: inline-block;
+    margin-left: $spacer * 0.5;
+    font-size: $font-size-sm;
+    &:before {
+      content: '|';
+      display: inline-block;
+      margin-right: $spacer * 0.5;
+    }
+  }
+  .field--name-field-date {
+    display: inline-block;
+    font-size: $font-size-sm;
+  }
+  .field__label {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base;
+    &:after {
+      content: ':';
+      display: inline-block;
+    }
+  }
+  .field--name-field-media-document {
+    a {
+      @extend .btn;
+      @extend .btn-primary;
+      @extend .btn-lg;
+      padding: $spacer $spacer*2 $spacer $spacer;
+      margin-bottom: $spacer;
+    }
+  }
+}

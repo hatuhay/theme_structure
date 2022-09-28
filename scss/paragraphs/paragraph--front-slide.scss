@@ -1,0 +1,16 @@
+.paragraph--type--front-slide {
+  .slide-wrapper {
+    @extend .d-flex;
+    @extend .align-items-center;
+    .container {
+      @extend .fs-1;
+      text-transform: uppercase;
+      color: $white;
+      font-weight: 700;
+      line-height: 1.1;
+      span {
+        color: $third-light;
+      }
+    }
+  }
+}

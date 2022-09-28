@@ -1,0 +1,77 @@
+.paragraph--type--slideshow {
+  .paragraph--type--front-slide {
+    .container{
+      font-family: $font-family-sans-serif-2;
+    }
+    section.slide-wrapper {
+      background-size: cover;
+      height: 600px;
+      width: 100%;
+    }
+  }
+}
+
+.paragraph-child-front-slide {
+  &.paragraph {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
+  .slick-dots {
+    bottom: 15px;
+  }
+}
+
+.paragraph-child-whats-new {
+  &.paragraph {
+    margin-top: 0;
+  }
+  > .field--name-field-title {
+    @extend .container, .mb-3, .px-2;
+    font-size: 35px;
+    color: #194779;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  background: $gray-200;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  .field--name-field-contenido {
+    @extend .container;
+    padding: 0;
+    .paragraph--type--whats-new {
+      background: $white;
+      @extend .m-2;
+      .field--name-field-image {
+        img {
+          margin: 0;
+          width: 110px;
+          height: auto;
+        }
+      }
+      section{
+        @extend .d-flex;
+      }
+      p {
+        margin: 0;
+      }
+      .content-right {
+        @extend .p-2;
+        .field--name-field-title {
+          @extend h5;
+          @extend .mt-2, .mb-1;
+          color: $primary-shade;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+        .field--name-field-body {
+          line-height: 1.1;
+        }
+      }
+    }
+  }
+}
+
+

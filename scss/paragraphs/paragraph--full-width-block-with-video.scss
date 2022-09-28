@@ -1,0 +1,9 @@
+.paragraph--type--full-width-block-with-video {
+  .field--name-field-video {
+    margin: 0;
+    iframe.media-oembed-content {
+      width: 454px;
+      height: 263px;
+    }
+  }
+}

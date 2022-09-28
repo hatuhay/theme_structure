@@ -1,0 +1,39 @@
+/* 
+Theme Name: Bootstrap 4 Sass
+Description: Bootstrap 4 with Sass
+*/
+
+// import files
+@import "import";
+
+@import "./fields/image";
+@import "./fields/field";
+
+@import "./layout/page";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/general";
+@import "./layout/page-title";
+@import "./layout/breadcrumb";
+@import "./layout/search";
+
+@import "./pages/node";
+@import "./pages/node--type-page";
+@import "./pages/node--type-document";
+@import "./pages/user";
+@import "./pages/document-library";
+@import "./pages/node--type-constitution";
+
+@import "./paragraphs/paragraph";
+@import "./paragraphs/paragraph--cube";
+@import "./paragraphs/paragraph--slideshow";
+@import "./paragraphs/paragraph--full-width-block";
+@import "./paragraphs/paragraph--full-width-block-with-video";
+@import "./paragraphs/paragraph--full-width-block-with-image";
+@import "./paragraphs/paragraph--front-slide";
+@import "./paragraphs/paragraph--full-width-paragraph-container";
+@import "./paragraphs/paragraph--paragraph-group-in-columns";
+@import "./paragraphs/paragraph--image";
+@import "./paragraphs/paragraph--content-embed.html";
+@import "./paragraphs/paragraph--constitution-documents";
+@import "./paragraphs/paragraph--text";

@@ -1,0 +1,107 @@
+/* GENERAL STYLES
+-------------------------------------------------*/
+
+body {
+  background: $white;
+}
+
+
+/* COLORS 
+--------------------------------------------------*/
+
+a {
+  color: $accent-shade;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.bg-inverse {
+  background: $primary-shade !important;
+}
+
+.menu--main li a {
+  color: $primary-shade;
+}
+
+.menu--account li a {
+  color: $primary-shade;
+}
+
+.site-name-slogan a {
+  text-decoration: none;
+}
+
+.card img {
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+.card .field--type-image {
+  margin: 0
+}
+
+// slick
+
+.slick {
+  width: 100%;
+}
+
+.slick>div {
+  margin: 0 15px;
+}
+
+.slick-dots li button::before {
+  font-size: 0.8rem;
+}
+
+.slick-dots li.slick-active button::before {
+  color: white;
+  opacity: 1;
+}
+
+// remove, just placeholder for development
+#block-frontplaceholderdelete {
+  img {
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+.file {
+  padding-left: 0;
+  &--application-pdf{
+    background-image: none;
+    a{
+      border-radius: 0 !important;
+      display: inline-flex !important;
+      gap: 20px;
+      &::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 30px;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMzEiIHZpZXdCb3g9IjAgMCAyNCAzMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDBWMjQuMk0xMiAyNC4yTDEgMTIuMU0xMiAyNC4yTDIzIDEyLjEiIHN0cm9rZT0iIzcyQjFEMyIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxsaW5lIHgxPSIxIiB5MT0iMjkuODAwMyIgeDI9IjIzIiB5Mj0iMjkuODAwMyIgc3Ryb2tlPSIjNzJCMUQzIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+Cg==);
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+        background-position: center center;
+        transition: all 0.3s ease;
+      }
+      &:hover {
+        &::before {
+          background-position: center bottom;
+        }
+      }
+    }
+  }
+}
+
+
+[style*="#837f92"],[style*="#0278a1"]{
+  *{
+    color: $white;
+  }
+}

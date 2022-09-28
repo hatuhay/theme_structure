@@ -1,0 +1,29 @@
+global-styling:
+  version: VERSION
+  js: 
+    js/bootstrap.min.js: { weight: -48 }
+    js/barrio.js: {}
+    js/custom.js: {}
+  css:
+    component:
+      css/style.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/popperjs
+slick:
+  js: 
+    js/slick.min.js: {}
+slide-hero:
+  js: 
+    js/slide-hero.js: {}
+  dependencies:
+    - peacemaker/slick
+slide-whats-new:
+  js: 
+    js/slide-whats-new.js: {}
+  dependencies:
+    - peacemaker/slick
+paragraph-list:
+  js: 
+    js/paragraph-list.js: {}

@@ -1,0 +1,9 @@
+body.path-user {
+  .content {
+    @extend .row;
+    @extend .justify-content-center;
+    form {
+      @extend .col-md-6;
+    }
+  }
+}

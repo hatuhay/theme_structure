@@ -1,0 +1,26 @@
+.node--type-document {
+  &.node--view-mode-paragraph-embed {
+    background: $primary-shade;
+    color: $white;
+    min-height: 81px;
+    @extend .p-3;
+    h2 {
+      line-height: 1;
+      .field--name-title {
+        font-size: $font-size-base;
+        color: $white;
+      }
+    }
+    .field--name-field-document {
+      .field__item {
+        display: inline-block;
+        float: left;
+        a {
+          color: $white;
+          @extend .p-2;
+          font-size: $font-size-sm;
+        }
+      }
+    }
+  }
+}

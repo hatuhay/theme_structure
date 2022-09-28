@@ -1,0 +1,9 @@
+.paragraph--type--full-width-block-with-image {
+  .content-image {
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
